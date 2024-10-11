@@ -50,7 +50,7 @@ def main():
         img[:] = 0  # Limpa a imagem a cada iteração
         desenhar_pontos(img, pontos)  # Desenha os pontos originais
 
-        cv2.imshow("Transformações Geométricas", img)
+        cv2.imshow("Transformaçoes Geometricas", img)
         key = cv2.waitKey(0)
 
         if key == ord('t'):  # Translação
