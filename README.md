@@ -1,6 +1,7 @@
 # SPI
 
-![Project Image](src/Screenshot%20from%202024-09-20%2015-26-27.png)
+![Project Image](src/Screenshot%20from%202024-11-09%2015-50-45.png)
+![Project Image2](src/Screenshot%20from%202024-11-09%2015-50-51.png)
 
 A Python-based software for image processing using a graphical interface built with Tkinter. This application allows users to load images, convert them to grayscale, apply filters, adjust brightness and contrast, and perform geometric transformations. It uses OpenCV for image manipulation and PIL (Pillow) for displaying images. The main features include:
 
