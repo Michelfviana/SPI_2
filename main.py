@@ -48,7 +48,7 @@ def main():
         while True:
             img = np.zeros((altura, largura, 3), dtype=np.uint8)
             desenhar_pontos(img, pontos)
-            cv2.imshow("Transformações Geométricas", img)
+            cv2.imshow("Transformacoes Geometricas", img)
             cv2.waitKey(1)
 
             print("Escolha a transformação geométrica:")
