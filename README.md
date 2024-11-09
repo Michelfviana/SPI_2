@@ -22,7 +22,7 @@ The user interface includes buttons for each function, a canvas to display the o
 Make sure you have Python 3.x installed. You can check your Python version with the command:
 
 ```bash
-python --version
+python3 --version
 ```
 
 ## Cloning the Repository
