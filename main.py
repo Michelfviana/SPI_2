@@ -272,6 +272,7 @@ class ImageProcessorApp:
         return pontos_transladados[:2].T
 
     def rotacionar(self, pontos, angulo, ponto_ancoragem):
+        pontos = np.array(pontos)  # Convert list to NumPy array
         rad = np.deg2rad(angulo)
         matriz_rotacao = np.array([[np.cos(rad), -np.sin(rad), 0], [np.sin(rad), np.cos(rad), 0], [0, 0, 1]])
         pontos_homogeneos = np.hstack([pontos - ponto_ancoragem, np.ones((pontos.shape[0], 1))])
@@ -284,10 +285,10 @@ class ImageProcessorApp:
         pontos_escalonados = matriz_escalonamento @ pontos_homogeneos.T
         return pontos_escalonados[:2].T
 
-    def mouse_callback(self, event, x, y, flags, param):
+    def mouse_callback(self, event, x, y):
         if event == cv2.EVENT_LBUTTONDOWN and len(self.pontos) < self.num_pontos:
             self.pontos.append([x, y])
-
+            
     def geometric_transformations(self):
         self.num_pontos = int(input("Digite o número de pontos: "))
         self.pontos = []
